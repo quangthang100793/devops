@@ -100,7 +100,7 @@ Resources:
           sudo yum update -y
           sudo yum install -y nginx git aws-cli
           TOKEN=$(aws ssm get-parameter --name "ThangToken" --with-decryption --query "Parameter.Value" --output text)
-          git clone -b master https://quangthang10793:${TOKEN}@github.com/quangthang10793/devops ~/devops
+          git clone -b master https://quangthang100793:${TOKEN}@github.com/quangthang100793/devops ~/devops
           cd devops
           git checkout master
           sudo cp ~/devops/src/index.html /usr/share/nginx/html/index.html
