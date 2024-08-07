@@ -100,7 +100,9 @@ Resources:
           sudo yum update -y
           sudo yum install -y nginx git aws-cli
           TOKEN=$(aws ssm get-parameter --name "github_token" --with-decryption --query "Parameter.Value" --output text)
-          git clone https://khanhnguyen1942012:${TOKEN}@github.com/khanhnguyen1942012/hello-world-nginx ~/hello-world-nginx
+          git clone https://quangthang10793:${TOKEN}@github.com/quangthang10793/hello-world-nginx ~/hello-world-nginx
+          cd hello-world-nginx
+          git checkout master
           sudo cp ~/hello-world-nginx/src/index.html /usr/share/nginx/html/index.html
           sudo systemctl start nginx
           sudo systemctl enable nginx
