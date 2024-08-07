@@ -103,7 +103,7 @@ Resources:
           git clone -b master https://quangthang10793:${TOKEN}@github.com/quangthang10793/devops ~/devops
           cd devops
           git checkout master
-          sudo cp ~/hello-world-nginx/src/index.html /usr/share/nginx/html/index.html
+          sudo cp ~/devops/src/index.html /usr/share/nginx/html/index.html
           sudo systemctl start nginx
           sudo systemctl enable nginx
 
