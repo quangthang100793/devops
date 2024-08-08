@@ -86,7 +86,7 @@ Resources:
     Properties:
       InstanceType: t2.micro
       # KeyName: your-key-pair  # Replace with your actual key pair name
-      ImageId: ami-012c2e8e24e2ae21d
+      ImageId: ami-02346a771f34de8ac
       NetworkInterfaces:
         - AssociatePublicIpAddress: true
           DeviceIndex: 0
