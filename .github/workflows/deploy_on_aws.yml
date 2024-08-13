@@ -1,7 +1,12 @@
 name: Deploy Nginx to EC2
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Name to greet'
+        required: true
+        default: 'Trigger'
   push:
     branches:
       - main
