@@ -1,6 +1,7 @@
 name: Deploy Nginx to EC2
 
 on:
+  workflow_dispatch: 
   push:
     branches:
       - main
